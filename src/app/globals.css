@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body, html{
+  background-color: var(--main-bg);
+  margin: 0;
+  padding: 0;
+
+  color: var(--text-main);
+
+  font-family: "Open Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+
+:root{
+
+  /* Colors */
+  --main-bg: rgb(235, 235, 235);
+  --secondary-bg: rgb(242, 242, 242);
+  --hover: #e7e7e7;
+  --main-color: rgb(128, 128, 210);
+  --main-color-hover: rgb(110, 110, 184);
+
+  --text-main: rgb(63, 62, 62);
+
+  /* Spacings */
+  --p20: 20px;
+  --m20: 0 20px;
+  --gap: 15px;
+
+  /* Values */
+  --border-radius: 12px;
+}
+
+
+/* FLEX CLASSES */
+
+.flex{
+  display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+/* BOXING */
+
+.container {
+  padding: var(--p20);
+}
+
+.question {
+  cursor: pointer;
+  margin: var(--m20);
+}
+
+.answer {
+  margin: var(--m20);
+}
+
+.strikes {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: red;
+}
+
+.nextButton {
+  background-color: var(--main-color);
+  border-radius: var(--border-radius);
+  font-size: 20px;
+  border: none;
+  margin-top: 20px;
+  color: white;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+.nextButton:hover{
+  background-color: var(--main-color-hover);
+  cursor: pointer;
+
+}
+
+.answers-container {
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.answer-box {
+  width: 150px;
+  height: 100px;
+  background-color: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.answer-box:hover {
+  background-color: #e7e7e7;
+}
+
+.answer-box p {
+  margin: 0;
+}
+
+.question-container{
+  padding: var(--p20);
+  background-color: var(--secondary-bg);
+  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+}
+
+.question-container:hover{
+  cursor: pointer;
+  background-color: var(--hover);
+}
+
